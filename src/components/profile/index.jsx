@@ -30,6 +30,9 @@ const ProfileContaner = styled.div`
   padding: 2rem;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 4rem !important;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid red;
   h1 {
     font-size: 5rem;
   }
@@ -120,6 +123,7 @@ const ProfileContaner = styled.div`
 
 @media (max-width: ${(props) => `${props.theme.screen.tab}px`}) {
     padding: 1rem;
+
   h1 {
     font-size: 3rem;
   }

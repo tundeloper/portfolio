@@ -22,7 +22,6 @@ export const Button = styled.button<pageMode>`
   color: ${({ mode }) => mode.color};
   border: none;
   border-bottom: 1px solid red;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: bolder;

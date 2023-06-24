@@ -5,6 +5,7 @@ import { DivContainer } from './global/container';
 import Header from './components/Header';
 // import { Svg1 } from './assets/svgs/svgcomp';
 import Profile from './components/profile';
+import Skills from './components/skills';
 
 
 
@@ -21,7 +22,8 @@ function App() {
   return <ThemeProvider theme={theme}>
     <DivContainer mode={mode}>
       <Header mode={mode} onclick={modeHandler} />
-      <Profile mode={mode}/>
+      <Profile mode={mode} />
+      <Skills />
     </DivContainer>
   </ThemeProvider>
 }
