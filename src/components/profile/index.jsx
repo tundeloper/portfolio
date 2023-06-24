@@ -19,7 +19,7 @@ export default function Profile({mode}: pageMode) {
         <h1 className="left">Nice to meet you!</h1>
         <h1 className="right">I'm Babatunde Isiaka</h1>
         <p className="bio">I'm a frontend developer, passionate about building web and mobile applications that users love, Based in Lagos, Nigeria.</p>
-        <Button mode={mode}>Conatact me</Button>
+        <Button as="a" href="https://google.com" mode={mode}>Conatact me</Button>
       </div>
       <div className="profieImg"><img className="img" src={tunde} alt="tundeloper" /></div>
     </ProfileContaner>
