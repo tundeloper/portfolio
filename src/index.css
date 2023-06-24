@@ -1,14 +1,16 @@
-@font-face { 
+/* @font-face { 
   font-family: myfont; 
   src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf'); 
-} 
+} */
 
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*, body {
   margin: 0;
-  font-family: myfont;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+  cursor: url('tunde.png');
 }
 
 code {
