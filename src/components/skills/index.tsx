@@ -7,7 +7,7 @@ const skill = [{name:"HTML5", experience: "3 Years Experiences"},{name:"CSS", ex
 export default function Skills() {
   return (
       <Wrapper>
-          {skill.map(skill => <div>
+          {skill.map(skill => <div key={Math.random()}>
               <h1>{skill.name}</h1>
               <h2>{skill.experience}</h2>
           </div>)}

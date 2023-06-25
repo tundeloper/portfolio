@@ -9,16 +9,16 @@ export default function Project({mode}: {mode: {}}) {
       <StyledProject id='project'>
           <div className='title'>
               <h1>Project</h1>
-              <Button href='#profile' mode={mode}>Contact me</Button>
+              <Button href='#contact' mode={mode}>Contact me</Button>
           </div>
           <div className='grid'>
-              {projectList.map((list) => <div>
+              {projectList.map((list) => <div key={Math.random()}>
                   <LazyLoadImage src={list.img} delayTime={5000} placeholderSrc="project" effect='blur'/>
                   <div>{list.name}</div>
                   <div>{list.technologyUsed}</div>
                   <div className='project'>
-                      <Button as='a' mode={mode}>view project</Button>
-                      <Button mode={mode}>project code</Button>
+                      <Button as='a' href={list.projetLink} mode={mode}>view project</Button>
+                      <Button  href={list.projectCode} mode={mode}>project code</Button>
                   </div>
               </div>)}
           </div>
@@ -28,6 +28,9 @@ export default function Project({mode}: {mode: {}}) {
 
 const StyledProject = styled.div`
     padding: 0 2rem 0 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid red;
     .title {
         display: flex;
         justify-content: space-between;

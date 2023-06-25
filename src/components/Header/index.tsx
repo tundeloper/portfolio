@@ -17,7 +17,7 @@ interface props {
 
 const Header: React.FC<props> = (props) => {
   return (
-    <Head id='profile'>
+    <Head>
       <h1>Tundeloper</h1>
       <Links>
         <Githubsvg />

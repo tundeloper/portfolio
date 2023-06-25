@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Svg1 } from "../../assets/svgs/svgcomp";
 import tunde from '../../assets/images/tunde.png'
 import { Button } from "../../global/container";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // interface pageMode {
 //   mode: {
@@ -19,9 +20,12 @@ export default function Profile({mode}) {
         <h1 className="left">Nice to meet you!</h1>
         <h1 className="right">I'm Babatunde Isiaka</h1>
         <p className="bio">I'm a frontend developer, passionate about building web and mobile applications that users love, Based in Lagos, Nigeria.</p>
-        <Button as="a" href="" mode={mode}>Conatact me</Button>
+        <Button as="a" href="#contact" mode={mode}>Conatact me</Button>
       </div>
-      <div className="profieImg"><img className="img" src={tunde} alt="tundeloper" /></div>
+      <div className="profieImg">
+        {/* <img className="img" src={tunde} alt="tundeloper" /> */}
+        <LazyLoadImage className="img" src={tunde} alt="tundeloper"/>
+      </div>
     </ProfileContaner>
   )
 }

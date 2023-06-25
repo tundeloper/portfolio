@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Profile from './components/profile';
 import Skills from './components/skills';
 import Project from './components/Project';
+import Contactform from './components/contact';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Profile mode={mode} />
       <Skills />
       <Project mode={mode} />
+      <Contactform mode={mode} />
     </DivContainer>
   </ThemeProvider>
 }

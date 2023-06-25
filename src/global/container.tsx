@@ -26,6 +26,7 @@ export const Button = styled.a<pageMode>`
   font-size: 1.2rem;
   font-weight: bolder;
   text-decoration: none;
+  width: max-content;
   cursor: pointer;
   animation: padding 2s ease-in-out;
 
