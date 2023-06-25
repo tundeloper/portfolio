@@ -3,9 +3,9 @@ import { ThemeProvider } from 'styled-components';
 import {theme} from './global/theme'
 import { DivContainer } from './global/container';
 import Header from './components/Header';
-// import { Svg1 } from './assets/svgs/svgcomp';
 import Profile from './components/profile';
 import Skills from './components/skills';
+import Project from './components/Project';
 
 
 
@@ -24,6 +24,7 @@ function App() {
       <Header mode={mode} onclick={modeHandler} />
       <Profile mode={mode} />
       <Skills />
+      <Project mode={mode} />
     </DivContainer>
   </ThemeProvider>
 }

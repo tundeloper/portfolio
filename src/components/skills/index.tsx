@@ -18,6 +18,7 @@ export default function Skills() {
 
 const Wrapper = styled.div`
 padding: 0 2rem 0 2rem;
+margin-bottom: 3rem;
 display: grid;
 gap: 2rem;
 position: relative;

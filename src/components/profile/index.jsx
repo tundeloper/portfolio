@@ -4,14 +4,14 @@ import { Svg1 } from "../../assets/svgs/svgcomp";
 import tunde from '../../assets/images/tunde.png'
 import { Button } from "../../global/container";
 
-interface pageMode {
-  mode: {
-      background?: string,
-      color?: string
-  }
-}
+// interface pageMode {
+//   mode: {
+//       background?: string,
+//       color?: string
+//   }
+// }
 
-export default function Profile({mode}: pageMode) {
+export default function Profile({mode}) {
   return (
     <ProfileContaner>
       <div className="profilesvg"><Svg1 /></div>
@@ -19,7 +19,7 @@ export default function Profile({mode}: pageMode) {
         <h1 className="left">Nice to meet you!</h1>
         <h1 className="right">I'm Babatunde Isiaka</h1>
         <p className="bio">I'm a frontend developer, passionate about building web and mobile applications that users love, Based in Lagos, Nigeria.</p>
-        <Button as="a" href="https://google.com" mode={mode}>Conatact me</Button>
+        <Button as="a" href="" mode={mode}>Conatact me</Button>
       </div>
       <div className="profieImg"><img className="img" src={tunde} alt="tundeloper" /></div>
     </ProfileContaner>

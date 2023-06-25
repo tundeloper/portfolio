@@ -4,6 +4,7 @@ import { Githubsvg } from '../../assets/svgs/Githubsvg'
 import { LinkedInsvg } from '../../assets/svgs/linkedin-3'
 import { Twittersvg } from '../../assets/svgs/twitter-3'
 import {Mode} from './mode'
+import HashnodeSvg from '../../assets/svgs/hashNode'
 
 interface props {
   mode: {
@@ -16,14 +17,14 @@ interface props {
 
 const Header: React.FC<props> = (props) => {
   return (
-    <Head>
+    <Head id='profile'>
       <h1>Tundeloper</h1>
       <Links>
         <Githubsvg />
         <LinkedInsvg />
         <Twittersvg />
         <div className='mode-item'>
-          <a href='https://tundeloper-f186a.web.app/'>Blog</a>
+          <HashnodeSvg />
           <div onClick={props.onclick}>
             <Mode mode ={props.mode} />
           </div>
