@@ -8,7 +8,8 @@ import HashnodeSvg from '../../assets/svgs/hashNode'
 
 interface props {
   mode: {
-    background: string
+    background: string,
+    color: string
   },
   onclick?: () => void,
 }
@@ -19,12 +20,13 @@ const Header: React.FC<props> = (props) => {
   return (
     <Head>
       <h1>Tundeloper</h1>
-      <Links>
+      <Links mode={props.mode}>
         <Githubsvg />
         <LinkedInsvg />
         <Twittersvg />
         <div className='mode-item'>
           <HashnodeSvg />
+          <a href='https://tundeloper.hashnode.dev/' >Blog</a>
           <div onClick={props.onclick}>
             <Mode mode ={props.mode} />
           </div>
@@ -36,13 +38,19 @@ const Header: React.FC<props> = (props) => {
 
 export default Header
 
-const Links = styled.div`
+const Links = styled.div<{mode:{color: string}}>`
   display: flex;
   height: 2rem;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   background: gray;
+
+  a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: ${(props) => props.mode.color}
+  }
 `
 
 const Head = styled.header`

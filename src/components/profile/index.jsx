@@ -37,6 +37,7 @@ const ProfileContaner = styled.div`
   padding-bottom: 4rem !important;
   margin-bottom: 3rem;
   border-bottom: 1px solid red;
+  
   h1 {
     font-size: 5rem;
   }
@@ -101,8 +102,6 @@ const ProfileContaner = styled.div`
       transform: rotate(0);
     }
   }
-
-  
 }
 
 .bio {
@@ -148,11 +147,16 @@ const ProfileContaner = styled.div`
   @media (max-width: ${(props) => `${props.theme.screen.phone}px`}) {
     padding: .5rem;
     flex-direction: column-reverse;
-    h1 {
+
+    .profilesvg {
+      display: none;
+    }
+
+  h1 {
     font-size: 2rem;
     margin-top: 1rem;
     text-align: center;
-   }
+  }
 
   .bio {
   width: auto;

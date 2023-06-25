@@ -18,7 +18,6 @@ const StyleContact = styled.div`
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
-    border-bottom: 1px solid red;
 
     @media (max-width: ${(props) => `${props.theme.screen.phone}px`}) {
         flex-direction: column;
