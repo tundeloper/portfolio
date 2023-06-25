@@ -87,7 +87,7 @@ const StyledProject = styled.div`
 }
 
 @media (max-width: ${(props) => `${props.theme.screen.phone}px`}) {
-    padding: 1rem;
+    /* padding: 1rem; */
     .grid {
     grid-template-columns: auto;
     gap: 2rem;

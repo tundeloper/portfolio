@@ -10,9 +10,11 @@ export default function Form({ mode }: { mode: {} }) {
 
   return (
       <StyledForm mode={mode} onSubmit={formSubmit}>
+          <div>
           <input type='name' placeholder='Name'/>
           <input type='email' placeholder='Email' />
           <textarea placeholder='Message' />
+          </div>
           <Button as='button' mode={mode} type='submit'>SEND MESSAGE</Button>
     </StyledForm>
   )
@@ -20,7 +22,13 @@ export default function Form({ mode }: { mode: {} }) {
 
 const StyledForm = styled.form<{mode:{}}>`
     display: flex;
+    align-items: center;
     flex-direction: column;
+
+& > div {
+    display: flex;
+    flex-direction: column;
+}
 
 input {
     background-color: transparent;
@@ -47,4 +55,25 @@ textarea {
     max-width: 25rem;
     color: ${({mode}) => mode};
 }
+
+@media (max-width: 800px) {
+    & > div {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: ${(props) => `${props.theme.screen.phone}px`}) {
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
 `

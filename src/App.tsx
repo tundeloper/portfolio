@@ -7,6 +7,7 @@ import Profile from './components/profile';
 import Skills from './components/skills';
 import Project from './components/Project';
 import Contactform from './components/contact';
+import Footer from './components/footer';
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Skills />
       <Project mode={mode} />
       <Contactform mode={mode} />
+      <Footer />
     </DivContainer>
   </ThemeProvider>
 }
