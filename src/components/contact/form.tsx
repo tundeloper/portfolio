@@ -21,10 +21,6 @@ export default function Form({ mode }: { mode: {} }) {
 }
 
 const StyledForm = styled.form<{mode:{}}>`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
 & > div {
     display: flex;
     flex-direction: column;
@@ -52,28 +48,23 @@ textarea {
     border-bottom: 1px solid gray;
     font-size: large;
     height: 10rem;
-    max-width: 25rem;
+    width: 25rem;
     color: ${({mode}) => mode};
 }
 
 @media (max-width: 800px) {
-    & > div {
+    width: 100%;
+    input {
         width: 100%;
     }
-    input {
+    textarea {
         width: 100%;
     }
 }
 
 
 @media (max-width: ${(props) => `${props.theme.screen.phone}px`}) {
-    input {
-        width: 100%;
-    }
-
-    textarea {
-        width: 100%;
-    }
+    
 }
 
 `
