@@ -23,6 +23,8 @@ const StyledFooter = styled.div`
   justify-content: space-between;
   align-items: center;
   background: gray;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 
 
   .footerNav {
