@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { SvgCircle } from '../../assets/svgs/svgCircle'
 
-const skill = [{name:"HTML5", experience: "3 Years Experiences"},{name:"CSS", experience: "3 Years Experiences"},{name:"Javascript", experience: "3 Years Experiences"},{name:"React", experience: "2 Years Experiences"},{name:"Next", experience: "2 Years Experiences"},{name:"Sass", experience: "3, Years Experiences"}]
+const skill = [{name:"HTML5", experience: "3 Years Experiences"},{name:"CSS", experience: "3 Years Experiences"},{name:"Javascript", experience: "3 Years Experiences"},{name:"React", experience: "2 Years Experiences"},{name:"Next", experience: "2 Years Experiences"},{name:"Sass", experience: "3, Years Experiences"},{name:"tailwind CSS", experience: "2, Years Experiences"}]
 
 export default function Skills() {
   return (
